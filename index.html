@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maxmum-scale=1.0, minium-scale=1.0">
+    <title>画板</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="//at.alicdn.com/t/font_1197640_57oth4amv04.js"></script>
 </head>
+
 <body>
-    <canvas id="canvas"></canvas>
-    <div id='actions' class='actions'>
-        <button id='eraser'>橡皮檫</button>
-        <button id='brush'>画笔</button>
+    <div class="actions" id="actions">
+        <svg class="icon active" id=pen>
+            <use xlink:href="#icon-encryptionpen-o"></use>
+        </svg>
+        <svg class="icon" id=eraser>
+            <use xlink:href="#icon-eraser"></use>
+        </svg>
+        <svg class="icon" id=clear>
+            <use xlink:href="#icon-ei-icon-del"></use>
+        </svg>
+        <svg class="icon" id=download>
+            <use xlink:href="#icon-save1"></use>
+        </svg>
     </div>
-    <script src="main.js"></script>
+    <div class="colors" id="colors">
+        <ol>
+            <li class="black active" id="black"></li>
+            <li class="red" id="red"></li>
+            <li class="blue" id="blue"></li>
+            <li class="green" id="green"></li>
+        </ol>
+    </div>
+    <div class="line" id="line">
+        <ol>
+            <li class="less" id="less"></li>
+            <li class="normal" id="normal"></li>
+            <li class="more active" id="more"></li>
+            <li class="greatMore" id="greatMore"></li>
+        </ol>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="./main.js"></script>
 </body>
+
 </html>
