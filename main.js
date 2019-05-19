@@ -42,6 +42,7 @@ function autoSetCanvas() {
 
 function eraserUnable(){
   pen.onclick = function () {
+    console.log()
     usingEraser = false
     pen.classList.add('active')
     eraser.classList.remove('active')
@@ -64,6 +65,7 @@ function chooseColors(){
   }
   red.onclick = function(){
     ctx.strokeStyle = 'red'
+    ctx.fillStyle = 'red'
     black.classList.remove('active')
     red.classList.add('active')
     blue.classList.remove('active')
@@ -71,6 +73,7 @@ function chooseColors(){
   }
   blue.onclick = function(){
     ctx.strokeStyle = 'blue'
+    ctx.fillStyle = 'blue'
     black.classList.remove('active')
     red.classList.remove('active')
     blue.classList.add('active')
@@ -78,6 +81,7 @@ function chooseColors(){
   }
   green.onclick = function(){
     ctx.strokeStyle = 'green'
+    ctx.fillStyle = 'green'
     black.classList.remove('active')
     red.classList.remove('active')
     blue.classList.remove('active')

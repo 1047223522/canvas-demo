@@ -8,10 +8,18 @@ body{
 li{
     list-style: none;
 }
+.canvas{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 .actions{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 .icon {
     width: 1.2em; height: 1.2em;
@@ -27,11 +35,12 @@ li{
     transform: scale(1.2);
     fill: red;
  }
- .colors ol{
+ .colors{
      list-style: none;
      position: fixed;
      top: 45px;
      left: 10px;
+     z-index: 2;
  }
  .colors li{
      border-radius: 50%;
@@ -60,6 +69,7 @@ li{
     position: fixed;
     top: 170px;
     left: 6px;
+    z-index: 2;
 }
 .line li{
     width: 30px;
